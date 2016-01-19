@@ -1,0 +1,31 @@
+Database:
+Waar is de lokatie? 
+pag_organisatiespag_organisaties: pjt met codes die onder (amsterdam) vallen. Naam => gekoppeld aan stadsdeel? => aan stukje op de plattegrond. 
+
+
+Technologie (FE): Oracle JEt:
+Voordelen:
+	Integratie met ADF? 
+	Shiny DVT's 
+	Gebruikt JQuery => klein voorbeeldje kaart met jQuery library 
+Nadelen: 
+	- Mag nog niet gebruikt worden zonder cloud. Boe
+	- Leren van knockout, require, en OJET zelf. (ook een voordeel)
+	
+Angular 1?2: 
+Voordelen:
+	Bekend:
+Nadelen: 
+ - Integratie met ADF
+ - Misschien te groot 
+ - Minder mogelijkheden met grafieken e.d.
+ - Angular2 komt uit => ondersteuning Angular1
+ 
+ Backend:
+ (hoe dit te integreren met adf?)
+ Oracle jet => business components gebruiken?
+  - Pagoni database
+  - Nodejs, -> makkelijker te koppelen 
+  
+  
+ Tijd; 
