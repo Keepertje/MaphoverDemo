@@ -51,6 +51,7 @@ body {
       letter-spacing:3px;
       font-size:22px;
       margin-top:-5%;
+      transition: 0.2s ease-in-out
     }
     a{
       color:white;
@@ -76,6 +77,8 @@ svg path:hover{
     fill:#00B6D1;
 }
 
+
+
 ul{
      list-style-type: none;
      
@@ -83,7 +86,7 @@ ul{
         color:white;
         letter-spacing:2px;
         font-size:14px; 
-        transform:translateY(100%);
+        padding:2px;
         &:hover{
         
             font-size:20px; 
@@ -92,104 +95,24 @@ ul{
 }
 
 
-.slideInBottom{
-    animation:slide-in-bottom 1s ease-in-out 1 0s both;
-}
-
-.slideOutBottom{
-     animation:slide-out-bottom 0.4s ease-in-out 1 0s both;
-}
-.slideInLeft{
-  animation:slide-in-left 0.4s linear 1 .2s both;
-}
-.slideInRight{
-  animation:slide-in-right 0.4s linear 1 0.2s both;
-}
-.slideOutLeft{
-  animation:slide-out-left 0.4s linear 1 0s both;
-}
-.slideOutRight{
-  animation:slide-out-right 0.4s linear 1 0s both;
-}
-
-@keyframes slide-in-bottom{
+.loop-li(10);
+.loop-li(@n, @i: 0) when (@i =< @n) {
+   li:nth-child(@{i}){
+     opacity:0;
     
-    from {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%)
+    @delay:unit(@i*0.1, s);
+    -webkit-animation:fadeIn 1s ease-in @delay 1 forwards;  
+    -moz-animation:fadeIn 1s ease-in @delay 1 forwards; 
+    animation:fadeIn fadeIn 1s ease-in @delay 1 forwards; 
   }
-  to {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%)
-  
-  }
-}
-@keyframes slide-out-bottom{
-    
-    from {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%)
-  }
-  to {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%)
-  
-  }
+  .loop-li(@n, (@i + 1));
 }
 
-@keyframes slide-in-left{
 
-    from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
-  }
-  to {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%)
-  
-  }
- 
-}
 
-@keyframes slide-in-right{
 
-    from {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%)
-  }
-  to {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%)
-  
-  }
- 
-}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-@keyframes slide-out-right{
-
-    from {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%)
-  }
-  to {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%)
-  
-  }
- 
-}
-
-@keyframes slide-out-left{
-
-    from {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%)
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
-  
-  }
- 
-}
 

@@ -1,10 +1,16 @@
 $(document).ready(function () {
 
     var delen = {'Oudzuid' : [
-                    'Science Park', 'StadionPlein','Mosveld','Oostpoort','Overhoeks'
+                    'Project a', 'Project 1','Project 2','Project 3','Project 4'
                     ],
-                  'Osdorp': [
-                    'Hamerstraat', 'NDSM Haven','Ravel','Rai'
+                  'Osdorp' : [
+                    'Project 5','Project x', 'Project 6','Project 7','Project 8'
+                    ],
+                    'Zeebrug' : [
+                    'Project 9','Project 10','Project 11','Project 12'
+                    ],
+                    'Zuidoost' : [
+                    'Project 13','Project 14','Project 15','Project 16','Project 17','Project 18','Project 19'
                     ]};
                     
     $('path').click(function () {
@@ -12,13 +18,12 @@ $(document).ready(function () {
 
         toggleActive($this[0]);
        var region = $('#regionName').text()
-       var project_lijst =  delen[region];
-       console.log(project_lijst);
+     
+      
        var listHTML = "";
        if(delen[region]){
-       $.each(delen[region], function(a,b){
-           console.log(a,b);
-           listHTML += "<li>" + b + "</li>"
+       $.each(delen[region], function(a,region){
+           listHTML += "<li>" + region + "</li>"
        })
        }
        $('.projects ul').remove();
