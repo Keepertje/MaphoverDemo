@@ -1,0 +1,172 @@
+/*Basic stuff */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #A6A2A2;
+  font-family: 'Roboto', sans-serif;
+}
+body h1 {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 1.8em;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background-color: #A6A2A2;
+  position: relative;
+}
+.topbar {
+  margin: auto;
+  height: 10vh;
+  text-align: center;
+  width: 100%;
+}
+.left {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100vh;
+}
+.left .inner {
+  width: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  height: 100%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+.left .inner h1 {
+  color: white;
+  letter-spacing: 4px;
+  margin-top: 20%;
+}
+.left .inner h2 {
+  color: grey;
+  letter-spacing: 3px;
+  font-size: 22px;
+  margin-top: -5%;
+  transition: 0.2s ease-in-out;
+}
+.left .inner a {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.left .inner a:hover {
+  color: #f5f5f5;
+}
+.right {
+  position: relative;
+  width: 50%;
+  float: right;
+  height: 100vh;
+}
+svg path:hover {
+  fill: #00B6D1;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2px;
+}
+ul li:hover {
+  font-size: 20px;
+}
+li:nth-child(0) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0s 1 forwards;
+}
+li:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.1s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.1s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.1s 1 forwards;
+}
+li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.2s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.2s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.2s 1 forwards;
+}
+li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.3s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.3s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.3s 1 forwards;
+}
+li:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.4s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.4s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.4s 1 forwards;
+}
+li:nth-child(5) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.5s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.5s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.5s 1 forwards;
+}
+li:nth-child(6) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.6s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.6s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.6s 1 forwards;
+}
+li:nth-child(7) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.7s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.7s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.7s 1 forwards;
+}
+li:nth-child(8) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.8s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.8s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.8s 1 forwards;
+}
+li:nth-child(9) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 0.9s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 0.9s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 0.9s 1 forwards;
+}
+li:nth-child(10) {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1s 1 forwards;
+  -moz-animation: fadeIn 0.5s ease-in 1s 1 forwards;
+  animation: fadeIn fadeIn 0.5s ease-in 1s 1 forwards;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
